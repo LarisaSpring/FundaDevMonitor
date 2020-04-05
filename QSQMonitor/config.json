@@ -1,0 +1,60 @@
+{
+    "groups": [
+        {
+            "name": "Team 1: threshold",
+            "queues": [
+                "test_devops_makelaars",
+                "test_devops_new_houses"
+            ],
+            "threshold": "10"
+        },
+        {
+            "name": "Team 1: threshold",
+            "queues": [
+                "test_devops_makelaars_errors"
+            ],
+            "threshold": "1"
+        },
+        {
+            "name": "Team 2: threshold",
+            "queues": [
+                "test_devops_makelaars",
+                "test_devops_new_houses"
+            ],
+            "threshold": "10"
+        },
+        //{
+        //    "name": "Team 2: threshold",
+        //    "queues": [
+        //        "test_devops_edited_houses",
+        //        "test_devops_removed_houses"
+        //    ],
+        //    "threshold": "25"
+        //},
+        {
+            "name": "Team 2: threshold",
+            "queues": [
+                "test_devops_new_houses_errors",
+                "test_devops_edited_houses_errors",
+                "test_devops_removed_houses_errors"
+            ],
+            "threshold": "1"
+        },
+        {
+            "name": "Team 3: threshold",
+            "queues": [
+                "test_devops_stats_phone_clicks",
+                "test_devops_stats_facebook_clicks"
+            ],
+            "threshold": "25"
+        },
+        {
+            "name": "Team 3: threshold",
+            "queues": [
+                "test_devops_stats_phone_clicks_errors",
+                "test_devops_stats_facebook_clicks_errors"
+            ],
+            "threshold": "1"
+        }
+    ]
+}
