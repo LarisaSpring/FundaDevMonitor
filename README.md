@@ -5,9 +5,11 @@ This README describes how to setup solution to monitor queue of messages. Please
 
 You can do it in 2 ways:
 1. As shown on the PassArgs.png:
+![alt text](https://github.com/LarisaSpring/FundaDevMonitor/blob/master/PassArgs.png "PassArgs.png")
 Open solution in Visual Studio, button right click on a project => Properties => Debug => Application arguments.
 Then paste --accessKey yourAccessKey --secretKey yourSecretKey
 2. As shown on the PassArgs_cmd.png:
+![alt text](https://github.com/LarisaSpring/FundaDevMonitor/blob/master/PassArgs_cmd.png)
 Run cmd, execute solution, passing arguments: 
 dotnet run --accessKey yourAccessKey --secretKey yourSecretKey
 
@@ -41,7 +43,8 @@ For example, for the Team 2 it shold look like:
 ```
 ## Run instance of Monitor
 Please run an instance of Monitor via cmd with parameters (see the screenshot RunMonitor.png).
+```
 SQSAlarms.exe --accessKey yourAccessKey --secretKey yourSecretKey
-
-
+```
+![alt text](https://github.com/LarisaSpring/FundaDevMonitor/blob/master/RunMonitor.png)
 
