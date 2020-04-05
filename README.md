@@ -1,7 +1,7 @@
 # FundaDevMonitor
 This README describes how to setup solution to monitor queue of messages. Please just follow few steps:
 
-## Provide your Access id and Secret access key in order to get an access to AWS SQS
+## Provide your Access id and Secret access key in order to get an access to AWS SQS - you need this to debug
 
 You can do it in 2 ways:
 1. As shown on the PassArgs.png:
@@ -28,7 +28,7 @@ For example, for the Team 2 it shold look like:
             "threshold": "10"
         },
         {
-            "name": "Team 2: threshold",
+            "name": "Team 2: errors threshold",
             "queues": [
                 "test_devops_new_houses_errors",
                 "test_devops_edited_houses_errors",
@@ -40,7 +40,8 @@ For example, for the Team 2 it shold look like:
 }
 ```
 ## Run instance of Monitor
-Any issues? Please contact me: 
-* gavriljukla@gmail.com, 
-* +31 (0)61-4490040
-* https://www.linkedin.com/in/lgavrilijuk
+Please run an instance of Monitor via cmd with parameters (see the screenshot RunMonitor.png).
+SQSAlarms.exe --accessKey yourAccessKey --secretKey yourSecretKey
+
+
+
